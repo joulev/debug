@@ -1,18 +1,11 @@
-import './globals.css'
+import "./globals.css";
+import "katex/dist/katex.min.css";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: React.PropsWithChildren) {
   return (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
       <head />
       <body>{children}</body>
     </html>
-  )
+  );
 }
