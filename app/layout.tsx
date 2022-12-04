@@ -1,4 +1,5 @@
 import Link from "next/link";
+import RootLayoutClient from "./layout.client";
 import "./globals.css";
 
 export default function RootLayout({ children }: React.PropsWithChildren) {
@@ -6,7 +7,9 @@ export default function RootLayout({ children }: React.PropsWithChildren) {
     <html lang="en">
       <head />
       <body>
-        <main>{children}</main>
+        <main>
+          <RootLayoutClient>{children}</RootLayoutClient>
+        </main>
         <nav>
           <Link href="/">Home</Link>
           <Link href="/dynamic">/dynamic</Link>
