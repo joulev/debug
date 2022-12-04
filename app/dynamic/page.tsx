@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div>Homepage</div>;
+  return <div>/dynamic</div>;
 }

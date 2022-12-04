@@ -1,18 +1,19 @@
-import './globals.css'
+import Link from "next/link";
+import "./globals.css";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: React.PropsWithChildren) {
   return (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
       <head />
-      <body>{children}</body>
+      <body>
+        <main>{children}</main>
+        <nav>
+          <Link href="/">Home</Link>
+          <Link href="/dynamic">/dynamic</Link>
+          <Link href="/dynamic/foo">/dynamic/foo</Link>
+          <Link href="/dynamic/bar">/dynamic/bar</Link>
+        </nav>
+      </body>
     </html>
-  )
+  );
 }
