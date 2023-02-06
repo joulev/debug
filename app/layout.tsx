@@ -1,18 +1,22 @@
-import './globals.css'
+import clsx from "clsx";
+import { Nunito, Ubuntu } from "@next/font/google";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+const nunito = Nunito({ subsets: ["latin"], variable: "--font-nunito" });
+const ubuntu = Ubuntu({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-ubuntu",
+});
+
+export default function RootLayout({ children }: React.PropsWithChildren) {
   return (
-    <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
+    <html
+      lang="en"
+      className={clsx(nunito.variable, ubuntu.variable)}
+      style={{ fontFamily: "var(--font-nunito)" }}
+    >
       <head />
       <body>{children}</body>
     </html>
-  )
+  );
 }
