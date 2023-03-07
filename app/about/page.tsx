@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export default function Page() {
-  return <Link href="/about">Go to /about</Link>;
+  return <Link href="/">Back to home</Link>;
 }
 
 export const metadata = {
-  title: "home",
+  title: "about",
 };

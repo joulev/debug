@@ -5,8 +5,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head />
       <body>{children}</body>
     </html>
   );
 }
+
+export const metadata = {
+  title: {
+    default: "default",
+    template: "%s | template",
+  },
+};
