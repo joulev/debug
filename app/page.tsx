@@ -1,3 +1,5 @@
+import Content from "~/app/content";
+
 export default function Page() {
-  return <div>Hello world</div>;
+  return <Content />;
 }
