@@ -1,0 +1,5 @@
+{
+  "$schema": "https://link.joulev.dev/l/vercel-json",
+  "rewrites": [{ "source": "/api/(.*)", "destination": "/api/index" }],
+  "framework": "vite"
+}
