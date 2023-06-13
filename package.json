@@ -1,17 +1,13 @@
 {
-  "name": "nuxt-app",
-  "private": true,
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
+  "name": "webapps",
   "devDependencies": {
-    "@nuxt/content": "^2.6.0",
-    "@nuxt/devtools": "latest",
-    "@types/node": "^18",
-    "nuxt": "^3.5.2"
+    "prettier": "2.8.8",
+    "prettier-plugin-svelte": "2.10.1",
+    "svelte": "3.59.1",
+    "turbo": "1.10.3"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev"
   }
 }

@@ -1,63 +1,58 @@
-# Nuxt 3 Minimal Starter
+<div align="center">
+  <br>
+  <img src="/apps/static/public/images/gh-asset/webapps/light.svg#gh-light-mode-only" alt="Logo" height="60px">
+  <img src="/apps/static/public/images/gh-asset/webapps/dark.svg#gh-dark-mode-only" alt="Logo" height="60px">
+  <br>
+  <br>
+  <p>A collection of all my personal web development "free-time" projects</p>
+</div>
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+---
 
-## Setup
+## website
 
-Make sure to install the dependencies:
+![](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
-```bash
-# npm
-npm install
+- **Description:** My personal corner on the Internet.
+- **Deployment:** https://joulev.dev
+- **Source:** [apps/website](/apps/website)
 
-# pnpm
-pnpm install
+## anime
 
-# yarn
-yarn install
-```
+![](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![](https://img.shields.io/badge/GraphQl-E10098?style=for-the-badge&logo=graphql&logoColor=white)
 
-## Development Server
+- **Description:** My anime tracker. An alternative interface for AniList (for me).
+- **Deployment:** https://anime.joulev.dev
+- **Source:** [apps/anime](/apps/anime)
 
-Start the development server on `http://localhost:3000`:
+## tategaki
 
-```bash
-# npm
-npm run dev
+![](https://img.shields.io/badge/SvelteKit-FF3E00?style=for-the-badge&logo=Svelte&logoColor=white) ![](https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00)
 
-# pnpm
-pnpm run dev
+- **Description:** My attempt to set up a Japanese-language website that uses tategaki writing style (vertical writing).
+- **Deployment:** https://tategaki.joulev.dev
+- **Source:** [apps/tategaki](/apps/tategaki)
 
-# yarn
-yarn dev
-```
+## link
 
-## Production
+![](https://img.shields.io/badge/nuxt.js-00C58E?style=for-the-badge&logo=nuxtdotjs&logoColor=white) ![](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D) ![](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
 
-Build the application for production:
+- **Description:** A URL shortener, although mainly for my own use it can be used publicly.
+- **Deployment:** https://link.joulev.dev
+- **Source:** [apps/link](/apps/link)
 
-```bash
-# npm
-npm run build
+## presentation
 
-# pnpm
-pnpm run build
+![](https://img.shields.io/badge/nuxt.js-00C58E?style=for-the-badge&logo=nuxtdotjs&logoColor=white) ![](https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D)
 
-# yarn
-yarn build
-```
+- **Description:** An app where I make (interactive) presentation slides with code and web technologies.
+- **Deployment:** https://presentation.joulev.dev
+- **Source:** [apps/presentation](/apps/presentation)
 
-Locally preview production build:
+## irasuto
 
-```bash
-# npm
-npm run preview
+![](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white) ![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- **Description:** My collection of some of the most gorgeous Japanese illustrations that I've found on Twitter.
+- **Deployment:** https://irasuto.joulev.dev
+- **Source:** [apps/irasuto](/apps/irasuto)

@@ -1,3 +1,7 @@
 {
-  "$schema": "https://link.joulev.dev/l/vercel-json"
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "github": {
+    "silent": true
+  },
+  "framework": "nuxtjs"
 }
