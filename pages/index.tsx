@@ -8,7 +8,7 @@ export default function Page() {
         Hello world look at this little envelope{" "}
         <FontAwesomeIcon icon={faEnvelope} />
       </p>
-      <p className="red">And this text should be red</p>
+      <p className="blue">And this text should be blue</p>
     </div>
   );
 }
