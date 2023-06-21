@@ -1,15 +1,24 @@
 "use client";
 import { useRouter } from "next/navigation";
-import { useEffect, useState, startTransition } from "react";
+import { useState, startTransition } from "react";
 
-export default function Input({ query }: { query: string | null }) {
+export default function Input() {
   const router = useRouter();
-  const [value, setValue] = useState(query ?? "")
-  useEffect(() => {
-    const debounceTimeout = setTimeout(() => {
-      startTransition(() => router.push(value === "" ? "/" : `/?q=${encodeURIComponent(value)}`));
-    }, 300);
-    return () => clearTimeout(debounceTimeout);
-  }, [value]);
-  return <input value={value} onChange={e => setValue(e.target.value)} placeholder="Search" />;
+  const [value, setValue] = useState("");
+  function onSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    startTransition(() =>
+      router.push(value === "" ? "/" : `/?q=${encodeURIComponent(value)}`)
+    );
+  }
+  return (
+    <form onSubmit={onSubmit}>
+      <input
+        value={value}
+        onChange={(e) => setValue(e.target.value)}
+        placeholder="Query..."
+      />
+      <button>Search</button>
+    </form>
+  );
 }

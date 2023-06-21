@@ -1,22 +1,14 @@
-import Input from "./input";
-
-async function search(query: string) {
-  await new Promise(resolve => setTimeout(resolve, 1000));
+async function search(query: string | null) {
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+  if (!query) return "No query provided";
   return `You searched for ${query}`;
 }
 
-async function SearchResult({ query }: { query: string | null }) {
-  if (!query) return <div>No query provided</div>;
-  const result = await search(query);
+export default async function Page({
+  searchParams,
+}: {
+  searchParams: { q: string | null };
+}) {
+  const result = await search(searchParams.q);
   return <div>{result}</div>;
-}
-
-export default async function Page({ searchParams }: { searchParams: { q: string | null }}) {
-  return (
-    <div>
-      <Input query={searchParams.q} />
-      {/* @ts-expect-error ts dumdum */}
-      <SearchResult query={searchParams.q} />
-    </div>
-  );
 }
