@@ -1,3 +1,5 @@
+import content from "./data.anyextension";
+
 export default function Page() {
-  return <div>Hello world</div>;
+  return <div>{content}</div>;
 }
