@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Page() {
-  return <div>Hello world</div>;
+  return <Link href="https://debug-git-test-joulev.vercel.app/test">Test</Link>;
 }
