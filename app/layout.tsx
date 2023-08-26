@@ -1,4 +1,4 @@
-// import { VercelToolbar } from "@vercel/toolbar/next";
+import { VercelToolbar } from "@vercel/toolbar/next";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -6,7 +6,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <head />
       <body>
         {children}
-        {/* <VercelToolbar /> */}
+        <VercelToolbar />
       </body>
     </html>
   );
