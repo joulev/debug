@@ -1,12 +1,13 @@
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+// import { VercelToolbar } from "@vercel/toolbar/next";
+
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <head />
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* <VercelToolbar /> */}
+      </body>
     </html>
   );
 }
