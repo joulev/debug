@@ -1,24 +1,17 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
-  "dependencies": {
-    "@types/node": "20.5.6",
-    "@types/react": "18.2.21",
-    "@types/react-dom": "18.2.7",
-    "@vercel/toolbar": "0.1.1",
-    "next": "canary",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "5.2.2"
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "prettier": "^3.0.2",
+    "tsconfig": "workspace:*",
+    "turbo": "latest"
   },
-  "pnpm": {
-    "patchedDependencies": {
-      "@vercel/toolbar@0.1.1": "patches/@vercel__toolbar@0.1.1.patch"
-    }
-  }
+  "packageManager": "pnpm@8.6.10",
+  "name": "my-turborepo"
 }
