@@ -1,3 +1,5 @@
+import { VercelToolbar } from "@vercel/toolbar/next";
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +7,10 @@ export default function RootLayout({
 }): JSX.Element {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {children}
+        <VercelToolbar />
+      </body>
     </html>
   );
 }

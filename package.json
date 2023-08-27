@@ -13,5 +13,10 @@
     "turbo": "latest"
   },
   "packageManager": "pnpm@8.6.10",
-  "name": "my-turborepo"
+  "name": "my-turborepo",
+  "pnpm": {
+    "patchedDependencies": {
+      "@vercel/toolbar@0.1.1": "patches/@vercel__toolbar@0.1.1.patch"
+    }
+  }
 }
