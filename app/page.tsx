@@ -1,3 +1,5 @@
-export default function Page() {
-  return <div>Hello world</div>;
+import Link from "next/link";
+
+export default function Home() {
+  return <Link href="/beers">Go to beers</Link>;
 }
