@@ -1,3 +1,8 @@
+"use client";
+
+import { useSidebar } from "./sidebar-provider";
+
 export default function Page() {
-  return <div>Hello world</div>;
+  const { toggleOpen } = useSidebar();
+  return <button onClick={() => toggleOpen()}>Toggle open</button>;
 }
