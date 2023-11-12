@@ -1,8 +1,5 @@
-import { cookies } from "next/headers";
-
 export default function Page() {
-  const cookie = cookies().get("test");
-  return <div>{cookie ? cookie.value : "no cookies present"}</div>;
+  return <div>Rendered on Cloudflare Pages at {new Date().toISOString()}</div>;
 }
 
 export const runtime = "edge";
