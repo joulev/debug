@@ -1,7 +1,8 @@
-import { db } from "~/lib/db";
-import { aTableThatDoesntExist } from "~/lib/schema";
+import { neon } from "@neondatabase/serverless";
+
+const sql = neon(process.env.DATABASE_URL!);
 
 export default async function Page() {
-  const data = await db.select().from(aTableThatDoesntExist);
+  const data = await sql`SELECT * FROM a_table_that_does_not_exist`;
   return <div>{JSON.stringify(data)}</div>;
 }
