@@ -8,9 +8,12 @@
     "info": "next info"
   },
   "dependencies": {
+    "@neondatabase/serverless": "0.6.0",
+    "@types/better-sqlite3": "7.6.8",
     "@types/node": "20.8.10",
     "@types/react": "18.2.33",
     "@types/react-dom": "18.2.14",
+    "drizzle-orm": "0.29.1",
     "next": "14.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
