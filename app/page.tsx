@@ -1,4 +1,9 @@
+"use client";
+
+import { useState } from "react";
+
 export default function Page() {
+  const [count, setCount] = useState(0);
   return (
     <div
       style={{ display: "flex", flexDirection: "column", gap: 16, padding: 16 }}
@@ -21,6 +26,10 @@ export default function Page() {
           </div>
         </div>
       ))}
+      <div style={{ fontWeight: 500 }}>
+        Count = {count}{" "}
+        <button onClick={() => setCount((x) => x + 1)}>Increment</button>
+      </div>
     </div>
   );
 }
