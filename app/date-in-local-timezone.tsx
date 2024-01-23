@@ -1,5 +1,11 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 export function DateInLocalTimezone({ date }: { date: Date }) {
-  return <span suppressHydrationWarning>{date.toLocaleString("en-GB")}</span>;
+  const [dateString, setDateString] = useState("loading");
+  useEffect(() => {
+    setDateString(date.toLocaleString("en-GB"));
+  }, [date]);
+  return dateString;
 }
