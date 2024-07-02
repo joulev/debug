@@ -1,3 +1,15 @@
+import {
+  RenderContext,
+  RenderUseEffect,
+  RenderUseState,
+} from "./client-components";
+
 export default function Page() {
-  return <div>Hello world</div>;
+  return (
+    <div>
+      <RenderContext />
+      <RenderUseState />
+      <RenderUseEffect />
+    </div>
+  );
 }
