@@ -1,3 +1,5 @@
+import { env } from "~/env";
+
 export default function Page() {
-  return <div>Hello world</div>;
+  return <div>{env.FOO}</div>;
 }
