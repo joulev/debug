@@ -1,3 +1,12 @@
+import localFont from "next/font/local";
+
+const font = localFont({
+  src: [{ path: "./regular.woff2", weight: "normal", style: "normal" }],
+  display: "swap",
+  declarations: [{ prop: "size-adjust", value: "90%" }],
+  adjustFontFallback: false,
+});
+
 export default function RootLayout({
   children,
 }: {
@@ -6,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head />
-      <body>{children}</body>
+      <body className={font.className}>{children}</body>
     </html>
   );
 }
